@@ -1,0 +1,98 @@
+html, body {
+    font-family: 'Exo 2', sans-serif;
+    background-color: #ECF0F1;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-size: 1.2em;
+    margin: 0;
+    padding: 0;
+}
+
+#app_content {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr;
+    max-height: 100%;
+}
+
+#top_chrome {
+    background-color: #333333;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#frame_buttons {
+}
+
+#close_button {
+    background-color: #4b4b4b;
+    font-size: 24px;
+    color: #222222;
+    font-family: Open Sans;
+    font-weight: 500;
+    text-align: center;
+    line-height: 17px;
+    padding: 5px 10px;
+    transition: all 0.1s ease;
+}
+
+#close_button:hover {
+    background-color: #666666;
+    cursor: default;
+}
+
+#app_title {
+    color: #CCCCCC;
+    flex: 1;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#terminal_holder {
+    overflow-y: auto;
+}
+
+#terminal {
+    height: 100%;
+    max-height: 100%;
+}
+
+/* jQuery Terminal */
+.prompt {
+    font-weight: bold;
+    /* workaround for https://github.com/sharkdp/insect/issues/78 */
+    letter-spacing: 1px;
+}
+
+/* syntax highlighting */
+
+.hl-emphasized {
+    font-weight: 700;
+}
+
+.hl-error {
+    color: #F92672;
+}
+
+.hl-value {
+    color: #66D9EF;
+}
+
+.hl-identifier {
+    color: #FD971F;
+}
+
+.hl-function {
+    font-style: italic;
+}
+
+.hl-unit {
+    color: #A6E22E;
+}

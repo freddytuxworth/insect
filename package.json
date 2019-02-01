@@ -13,6 +13,7 @@
     "insect": "./index.js"
   },
   "man": "docs/insect.1",
+  "main": "electron.js",
   "directories": {
     "test": "test"
   },
@@ -24,7 +25,8 @@
     "browserify": "pulp browserify --skip-entry-point -m Insect --standalone Insect -O -t insect.js",
     "build": "pulp build -m Insect",
     "server": "live-server web --open",
-    "test": "pulp test"
+    "test": "pulp test",
+    "electron": "electron ."
   },
   "bugs": {
     "url": "https://github.com/sharkdp/insect/issues"
@@ -37,9 +39,12 @@
   },
   "devDependencies": {
     "bower": "^1.8.4",
+    "electron": "^4.0.3",
+    "electron-css-reload": "^1.0.8",
     "fs-extra": "^7.0.1",
     "live-server": "^1.2.1",
     "npm-run-all": "^4.1.5",
+    "perfect-scrollbar": "^1.4.0",
     "pulp": "^12.3.0",
     "purescript": "^0.12.1"
   }
